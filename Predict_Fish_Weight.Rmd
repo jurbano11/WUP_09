@@ -153,6 +153,14 @@ The best regression model is all of them. The best regression model is L1, L3.
 
 ### Best Models
 
+```{r}
+Roachrock <- lm(Weight~.,data=Roach)
+summary.lm(Roachrock)
+```
+
+The residual standard error is 37.58. The r-squared is 0.821 and the p-value is 1.028e-0.5.This model holds the smallest p-value out of all the models we did so far above. 
+
+### Best Two regressor model
 
 
 ### Best Two regressor model
