@@ -122,22 +122,11 @@ This model summarizes put best two regression models. The residual standard erro
 ### Best Two regressor model
 
 ```{r}
-library(leaps)
-regsubsets.out <-
-    regsubsets(Weight ~ .,
-               data = Roach,
-               nbest = 1,       # 1 best model for each number of predictors
-               nvmax = NULL,    # NULL for no limit on number of variables
-               force.in = NULL, force.out = NULL,
-               method = "exhaustive")
-
-summary.out <- summary(regsubsets.out)
-as.data.frame(summary.out$outmat)
-library(car)
-subsets(regsubsets.out,statistic="adjr2",legend="bottom",main="Adjusted R^2")
+Piketwo <-lm(Weight~Length1+Length3, data=Pike)
+summary.lm(Piketwo)
 ```
+This model summarizes put best two regression models. The residual standard error is 92.56. The r-squared is 0.09649 and the p-value is 2.572e-11. The smallest p-value has the best result.
 
-The best regression model is all of them. The best regression model is L1, L3. 
 
 
 ## Roach
