@@ -176,6 +176,19 @@ summary.lm(Roachrock)
 The residual standard error is 37.58. The r-squared is 0.821 and the p-value is 1.028e-0.5.This model holds the smallest p-value out of all the models we did so far above. 
 
 
+### Best Two regressor model
+
+```{r}
+Roachrock <- lm(Weight~Length1 + Length3, data=Roach)
+summary.lm(Roachrock)
+```
+
+The residual standard error is 36.83. The r-squared is 0.8281 and the p-value is 1.23e-0.7.This model holds the second to smallest p-value out of all the chart/models. 
+
+
+
+
+
 
 
 
