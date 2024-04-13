@@ -187,6 +187,8 @@ The residual standard error is 36.83. The r-squared is 0.8281 and the p-value is
 
 
 
+## Final Summary Statements
+For all 3 species of fish, the best regression model was identified as well as the best 2 elemental regression model while using the best subset regression file. The Roachrock model held the smallest p-value out of all the models that were done. Pikebest was the best model out of all the 3 and Perch was just in between them.
 
 
 
