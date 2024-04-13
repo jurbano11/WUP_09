@@ -99,4 +99,25 @@ summary.lm(Perchmodel)
 
 The adjusted r-square is 0.94 and the residual standard error is 85.17, with a p-value
 
+## Pike
+
+```{r}
+library(leaps)
+regsubsets.out <-
+    regsubsets(Weight ~ .,
+               data = Pike,
+               nbest = 1,       # 1 best model for each number of predictors
+               nvmax = NULL,    # NULL for no limit on number of variables
+               force.in = NULL, force.out = NULL,
+               method = "exhaustive")
+
+summary.out <- summary(regsubsets.out)
+as.data.frame(summary.out$outmat)
+library(car)
+subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
+```
+
+L1, L3 are two best regression model. Best regression model is everything
+
+
 
