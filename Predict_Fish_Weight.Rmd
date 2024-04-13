@@ -120,4 +120,10 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 L1, L3 are two best regression model. Best regression model is everything
 
 
+### Best Models
+```{r}
+Pikebest <-lm(Weight~.,data=Pike)
+summary.lm(Pikebest)
+```
+The adjusted r-squared is 0.9 and the residual standard error is 85.17, with a p-value
 
