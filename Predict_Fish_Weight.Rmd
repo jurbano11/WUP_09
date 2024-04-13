@@ -127,3 +127,22 @@ summary.lm(Pikebest)
 ```
 The adjusted r-squared is 0.9 and the residual standard error is 85.17, with a p-value
 
+### Best Two regressor model
+
+```{r}
+Piketwo <-lm(Weight~Length1+Length3, data=Pike)
+summary.lm(Piketwo)
+```
+This model summarizes put best two regression models. The residual standard error is 92.56. The r-squared is 0.09649 and the p-value is 2.572e-11. The smallest p-value has the best result.
+
+
+### Best Two regressor model
+
+```{r}
+Piketwo <-lm(Weight~Length1+Length3, data=Pike)
+summary.lm(Piketwo)
+```
+This model summarizes put best two regression models. The residual standard error is 92.56. The r-squared is 0.09649 and the p-value is 2.572e-11. The smallest p-value has the best result.
+
+
+
