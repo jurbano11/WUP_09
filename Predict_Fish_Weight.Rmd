@@ -88,4 +88,15 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="topright",main="Adjusted R^2")
 ```
 
+### Best Two regressor model
+
+Best 2 regressor models are height and width.
+
+```{r}
+Perchmodel <-lm(Weight~Height+Width, data=Perch)
+summary.lm(Perchmodel)
+```
+
+The adjusted r-square is 0.94 and the residual standard error is 85.17, with a p-value
+
 
